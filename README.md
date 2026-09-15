@@ -8,12 +8,12 @@ Upload the source files to the stage in two folders, `clientA/` and `clientB/`, 
 
 | File | What it does |
 |---|---|
-| `00_setup.sql` | Database, schemas, stage, file formats |
-| `01_raw.sql` | Loads every file line by line into one table |
-| `02_repair.sql` | Fixes format problems so the files can be parsed |
-| `03_staging.sql` | Flattens XML, JSON and CSV into rows and columns |
-| `04_canonical.sql` | Canonical DDL, transformation and quality rules |
-| `05_validation.sql` | Row counts, referential integrity and key uniqueness |
+| `stup.sql` | Database, schemas, stage, file formats |
+| `raw.sql` | Loads every file line by line into one table |
+| `repair_views.sql` | Fixes format problems so the files can be parsed |
+| `staging.sql` | Flattens XML, JSON and CSV into rows and columns |
+| `ddlcanonical.sql` | Canonical DDL, transformation and quality rules |
+| `validation.sql` | Row counts, referential integrity and key uniqueness |
 
 The scripts can be re-run. Tables are replaced or truncated before each load.
 
